@@ -1,0 +1,921 @@
+{% load static %}
+<div class="main_menu">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <nav class="main_nav menu-wrapper" style="display: flex">
+          <ul class="menu menu-main">
+            <li class="catalog dropdown">
+              <a href="#"
+                ><img
+                  class="burger_img"
+                  src="{% static 'main/img/burger.svg' %}"
+                />Каталог продукции</a
+              >
+              <div class="tab">
+                <div class="tab__wrapper">
+                  <div class="tab__btns">
+                    <button class="btn-reset tab__btn" onclick='window.location.href = "/catalog" '>
+                      <img
+                        class="tab__icon"
+                        src="{% static 'menu/img/icon-menu.svg' %}"
+                        alt=""
+                      />
+                      <span>Труборезы и фаскорезы</span>
+                    </button>
+                    <button class="btn-reset tab__btn">
+                      <img
+                        class="tab__icon"
+                        src="{% static 'menu/img/icon-menu.svg' %}"
+                        alt=""
+                      />
+                      <span>Орбитальная сварка труб</span>
+                    </button>
+                    <button class="btn-reset tab__btn">
+                      <img
+                        class="tab__icon"
+                        src="{% static 'menu/img/icon-menu.svg' %}"
+                        alt=""
+                      />
+                      <span>Оборудование для АЭС</span>
+                    </button>
+                    <button class="btn-reset tab__btn">
+                      <img
+                        class="tab__icon"
+                        src="{% static 'menu/img/icon-menu.svg' %}"
+                        alt=""
+                      />
+                      <span>Механизмы для ремонта запорной араматуры</span>
+                    </button>
+                    <button class="btn-reset tab__btn">
+                      <img
+                        class="tab__icon"
+                        src="{% static 'menu/img/icon-menu.svg' %}"
+                        alt=""
+                      />
+                      <span>Механизмы нарезания резьбы на обсадных трубах</span>
+                    </button>
+                    <button class="btn-reset tab__btn">
+                      <img
+                        class="tab__icon"
+                        src="{% static 'menu/img/icon-menu.svg' %}"
+                        alt=""
+                      />
+                      <span>Прочее оборудование</span>
+                    </button>
+                  </div>
+                  <div class="tab__content">
+                    <div class="tab__item tab-item">
+                      <div class="tab-item__list">
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Разъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5950...Р59137</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Фаскорезы</span>
+                            <p class="tab-item__descr">Р5914…Р59112М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Дополнительное оборудование</span
+                            >
+                            <p class="tab-item__descr">
+                              Угольники, адаптер и т.д.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Запасные части</span>
+                            <p class="tab-item__descr">Резцы, примочки</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Неразъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5919М...Р5985М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Гидравлические станции</span
+                            >
+                            <p class="tab-item__descr">
+                              П5935…дизель, Рукава, БРС, Регулятор расхода
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Устройство резки из нутри</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab__item tab-item">
+                      <div class="tab-item__list">
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Разъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5950...Р59137</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Фаскорезы</span>
+                            <p class="tab-item__descr">Р5914…Р59112М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Дополнительное оборудование</span
+                            >
+                            <p class="tab-item__descr">
+                              Угольники, адаптер и т.д.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Запасные части</span>
+                            <p class="tab-item__descr">Резцы, примочки</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Неразъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5919М...Р5985М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Гидравлические станции</span
+                            >
+                            <p class="tab-item__descr">
+                              П5935…дизель, Рукава, БРС, Регулятор расхода
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Устройство резки из нутри</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab__item tab-item">
+                      <div class="tab-item__list">
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Разъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5950...Р59137</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Фаскорезы</span>
+                            <p class="tab-item__descr">Р5914…Р59112М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Дополнительное оборудование</span
+                            >
+                            <p class="tab-item__descr">
+                              Угольники, адаптер и т.д.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Запасные части</span>
+                            <p class="tab-item__descr">Резцы, примочки</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Неразъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5919М...Р5985М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Гидравлические станции</span
+                            >
+                            <p class="tab-item__descr">
+                              П5935…дизель, Рукава, БРС, Регулятор расхода
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Устройство резки из нутри</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab__item tab-item">
+                      <div class="tab-item__list">
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Разъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5950...Р59137</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Фаскорезы</span>
+                            <p class="tab-item__descr">Р5914…Р59112М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Дополнительное оборудование</span
+                            >
+                            <p class="tab-item__descr">
+                              Угольники, адаптер и т.д.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Запасные части</span>
+                            <p class="tab-item__descr">Резцы, примочки</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Неразъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5919М...Р5985М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Гидравлические станции</span
+                            >
+                            <p class="tab-item__descr">
+                              П5935…дизель, Рукава, БРС, Регулятор расхода
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Устройство резки из нутри</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab__item tab-item">
+                      <div class="tab-item__list">
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Разъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5950...Р59137</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Фаскорезы</span>
+                            <p class="tab-item__descr">Р5914…Р59112М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Дополнительное оборудование</span
+                            >
+                            <p class="tab-item__descr">
+                              Угольники, адаптер и т.д.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Запасные части</span>
+                            <p class="tab-item__descr">Резцы, примочки</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Неразъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5919М...Р5985М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Гидравлические станции</span
+                            >
+                            <p class="tab-item__descr">
+                              П5935…дизель, Рукава, БРС, Регулятор расхода
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Устройство резки из нутри</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab__item tab-item">
+                      <div class="tab-item__list">
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Разъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5950...Р59137</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Фаскорезы</span>
+                            <p class="tab-item__descr">Р5914…Р59112М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Дополнительное оборудование</span
+                            >
+                            <p class="tab-item__descr">
+                              Угольники, адаптер и т.д.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Запасные части</span>
+                            <p class="tab-item__descr">Резцы, примочки</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Неразъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5919М...Р5985М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Гидравлические станции</span
+                            >
+                            <p class="tab-item__descr">
+                              П5935…дизель, Рукава, БРС, Регулятор расхода
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Устройство резки из нутри</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab__wrapper-mobile">
+                  <div class="tab__btns">
+                    <button class="btn-reset tab__btn accordion">
+                      <img
+                        class="tab__icon"
+                        src="{% static 'menu/img/icon-menu.svg' %}"
+                        alt=""
+                      />
+                      <span>Труборезы и фаскорезы</span>
+                    </button>
+                    <div class="tab__item tab-item panel">
+                      <div class="tab-item__list">
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Разъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5950...Р59137</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Фаскорезы</span>
+                            <p class="tab-item__descr">Р5914…Р59112М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Дополнительное оборудование</span
+                            >
+                            <p class="tab-item__descr">
+                              Угольники, адаптер и т.д.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Запасные части</span>
+                            <p class="tab-item__descr">Резцы, примочки</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Неразъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5919М...Р5985М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Гидравлические станции</span
+                            >
+                            <p class="tab-item__descr">
+                              П5935…дизель, Рукава, БРС, Регулятор расхода
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Устройство резки из нутри</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn-reset tab__btn accordion">
+                      <img
+                        class="tab__icon"
+                        src="{% static 'menu/img/icon-menu.svg' %}"
+                        alt=""
+                      />
+                      <span>Орбитальная сварка труб</span>
+                    </button>
+                    <div class="tab__item tab-item panel">
+                      <div class="tab-item__list">
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Разъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5950...Р59137</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Фаскорезы</span>
+                            <p class="tab-item__descr">Р5914…Р59112М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Дополнительное оборудование</span
+                            >
+                            <p class="tab-item__descr">
+                              Угольники, адаптер и т.д.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Запасные части</span>
+                            <p class="tab-item__descr">Резцы, примочки</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Неразъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5919М...Р5985М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Гидравлические станции</span
+                            >
+                            <p class="tab-item__descr">
+                              П5935…дизель, Рукава, БРС, Регулятор расхода
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Устройство резки из нутри</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn-reset tab__btn accordion">
+                      <img
+                        class="tab__icon"
+                        src="{% static 'menu/img/icon-menu.svg' %}"
+                        alt=""
+                      />
+                      <span>Оборудование для АЭС</span>
+                    </button>
+                    <div class="tab__item tab-item panel">
+                      <div class="tab-item__list">
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Разъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5950...Р59137</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Фаскорезы</span>
+                            <p class="tab-item__descr">Р5914…Р59112М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Дополнительное оборудование</span
+                            >
+                            <p class="tab-item__descr">
+                              Угольники, адаптер и т.д.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Запасные части</span>
+                            <p class="tab-item__descr">Резцы, примочки</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Неразъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5919М...Р5985М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Гидравлические станции</span
+                            >
+                            <p class="tab-item__descr">
+                              П5935…дизель, Рукава, БРС, Регулятор расхода
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Устройство резки из нутри</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn-reset tab__btn accordion">
+                      <img
+                        class="tab__icon"
+                        src="{% static 'menu/img/icon-menu.svg' %}"
+                        alt=""
+                      />
+                      <span>Механизмы для ремонта запорной араматуры</span>
+                    </button>
+                    <div class="tab__item tab-item panel">
+                      <div class="tab-item__list">
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Разъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5950...Р59137</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Фаскорезы</span>
+                            <p class="tab-item__descr">Р5914…Р59112М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Дополнительное оборудование</span
+                            >
+                            <p class="tab-item__descr">
+                              Угольники, адаптер и т.д.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Запасные части</span>
+                            <p class="tab-item__descr">Резцы, примочки</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Неразъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5919М...Р5985М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Гидравлические станции</span
+                            >
+                            <p class="tab-item__descr">
+                              П5935…дизель, Рукава, БРС, Регулятор расхода
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Устройство резки из нутри</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn-reset tab__btn accordion">
+                      <img
+                        class="tab__icon"
+                        src="{% static 'menu/img/icon-menu.svg' %}"
+                        alt=""
+                      />
+                      <span>Механизмы нарезания резьбы на обсадных трубах</span>
+                    </button>
+                    <div class="tab__item tab-item panel">
+                      <div class="tab-item__list">
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Разъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5950...Р59137</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Фаскорезы</span>
+                            <p class="tab-item__descr">Р5914…Р59112М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Дополнительное оборудование</span
+                            >
+                            <p class="tab-item__descr">
+                              Угольники, адаптер и т.д.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Запасные части</span>
+                            <p class="tab-item__descr">Резцы, примочки</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Неразъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5919М...Р5985М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Гидравлические станции</span
+                            >
+                            <p class="tab-item__descr">
+                              П5935…дизель, Рукава, БРС, Регулятор расхода
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Устройство резки из нутри</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn-reset tab__btn accordion">
+                      <img
+                        class="tab__icon"
+                        src="{% static 'menu/img/icon-menu.svg' %}"
+                        alt=""
+                      />
+                      <span>Прочее оборудование</span>
+                    </button>
+                    <div class="tab__item tab-item panel">
+                      <div class="tab-item__list">
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Разъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5950...Р59137</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Фаскорезы</span>
+                            <p class="tab-item__descr">Р5914…Р59112М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Дополнительное оборудование</span
+                            >
+                            <p class="tab-item__descr">
+                              Угольники, адаптер и т.д.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name">Запасные части</span>
+                            <p class="tab-item__descr">Резцы, примочки</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Неразъемные труборезы</span
+                            >
+                            <p class="tab-item__descr">Р5919М...Р5985М</p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Гидравлические станции</span
+                            >
+                            <p class="tab-item__descr">
+                              П5935…дизель, Рукава, БРС, Регулятор расхода
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-item__item">
+                          <div class="tab-item__link" onclick="">
+                            <span class="tab-item__name"
+                              >Устройство резки из нутри</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown menu__item">
+              <a href="{% url 'about' %}"
+                >О компании<img
+                  class="arrow_menu"
+                  src="{% static 'main/img/menu-arrow.svg' %}"
+              /></a>
+              <div class="catalog_dropdown">
+                <ul class="drop_content1">
+                  <li><a href="#">Новые разработки</a></li>
+                  <li><a href="#">Гарантии</a></li>
+                  <li><a href="#">Наши партнеры</a></li>
+                  <li><a href="#">Отзывы</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu__item"><a href="#">Стоимость</a></li>
+            <li class="dropdown menu__item">
+              <a href="{% url 'services' %}"
+                >Услуги<img
+                  class="arrow_menu"
+                  src="{% static 'main/img/menu-arrow.svg' %}"
+              /></a>
+              <ul class="drop_content1">
+                <li><a href="#">Гарантия</a></li>
+                <li><a href="#">Ремонт</a></li>
+                <li>
+                  <a href="{% url 'service' %}"
+                    >Техническое обслуживание</a
+                  >
+                </li>
+                <li><a href="#">Аренда</a></li>
+                <li><a href="#">Пуско-наладочные работы</a></li>
+                <li><a href="#">Демонстрация оборудования</a></li>
+                <li><a href="#">Разработка оборудования по ТЗ</a></li>
+                <li><a href="#">Доставка</a></li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a href="{% url 'documentation' %}">Документация</a>
+            </li>
+            <li class="menu__item">
+              <a href="{% url 'contacts' %}">Контакты</a>
+            </li>
+            <li class="search_nav">
+              <form>
+                <input
+                  type="text"
+                  name="text"
+                  class="search"
+                  placeholder="Поиск"
+                />
+                <button type="submit" class="searchButton">
+                  <i class="fa fa-search"></i>
+                </button>
+              </form>
+            </li>
+          </ul>
+          <div class="menu-more">
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 426.667 426.667"
+            >
+              <g>
+                <g>
+                  <circle cx="42.667" cy="213.333" r="42.667" />
+                </g>
+              </g>
+              <g>
+                <g>
+                  <circle cx="213.333" cy="213.333" r="42.667" />
+                </g>
+              </g>
+              <g>
+                <g>
+                  <circle cx="384" cy="213.333" r="42.667" />
+                </g>
+              </g>
+            </svg>
+            <div class="menu-sub menu" style="position: absolute"></div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

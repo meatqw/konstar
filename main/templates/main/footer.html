@@ -1,0 +1,300 @@
+{% load static %}
+
+<footer>
+  <section class="footer_menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer_menu_wrap">
+            <ul>
+              <li><a href="#">Сертификаты</a></li>
+              <li><a href="#">Дилерам</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+<section class="footer_contacts">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="header_wrap">
+          <div class="header_addr">
+            <div class="addr_ico">
+              <img src="{% static 'main/img/map.svg' %}" alt="map-ico" />
+            </div>
+            <a
+              href="https://yandex.ru/maps/-/CCUizPaa1D"
+              class="addr_text"
+              target="_blancы"
+              class="addr_text"
+            >
+              <span>Калужская обл., г. Обнинск,</span>
+              <span>Пионерский проезд 46</span>
+            </a>
+          </div>
+
+          <div class="header_contacts header_contacts--mail">
+            <img src="{% static 'main/img/worldwide.svg' %}" alt="worlwide" />
+            <a class="header_contacts--mail" href="mailto:info@konstar.ru"
+              >info@konstar.ru</a
+            >
+          </div>
+          <div class="header_contacts">
+            <img src="{% static 'main/img/phone_ico.svg' %}" alt="phone ico" />
+            <a class="header_contacts--phone" href="tel:+74843933161"
+              >+7 (484) 393-31-61</a
+            >
+          </div>
+          <a href="#" class="call_btn">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            Мы перезвоним
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="copy">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="copy_info">
+          <p class="copy_info__text">
+            &copy; 2000-2021 Производственно-конструкторский центр КОНСТАР. Все
+            права защищены.<span></span>
+          </p>
+          <a href="#" class="politics_link">Политика конфиденциальности</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="dev_info">
+          <a href="#" class="developed">Разработано <span>Йод</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- MultiStep Form -->
+      <div class="container-fluid" id="grad1">
+        <div class="row justify-content-center mt-0">
+          <div
+            class="col-11 col-sm-9 col-md-7 col-lg-11 text-center p-0 mt-3 mb-2"
+          >
+            <div class="card px-0 pt-4 pb-0">
+              <div class="row">
+                <div class="col-md-12 mx-0">
+                  <form id="msform">
+                    <!-- progressbar -->
+                    <ul id="progressbar">
+                      <li class="active" id="account"></li>
+                      <li id="personal"></li>
+                      <li id="payment"></li>
+                      <li id="confirm"></li>
+                      <li id="personal"></li>
+                      <li id="payment"></li>
+                      <li id="confirm"></li>
+                      <li id="personal"></li>
+                      <li id="payment"></li>
+                    </ul>
+                    <!-- fieldsets -->
+                    <fieldset>
+                      <div class="form-card">
+                        <div class="first_step">
+                          <h2 class="fs-title first_step_title">
+                            Ответьте на простые вопросы и получите коммерческое
+                            предложение
+                          </h2>
+                          <div class="step_img_wrap">
+                            <img src="{% static 'main/img/first-step.png' %}" alt="img" />
+                          </div>
+                        </div>
+                      </div>
+
+                      <input
+                        type="button"
+                        name="next"
+                        class="next action-button"
+                        value="Далее"
+                      />
+                    </fieldset>
+                    <fieldset>
+                      <div class="form-card">
+                        <h2 class="fs-title">Поверхность для установки</h2>
+                        <div class="second_step">
+                          <div class="radio_one">
+                            <img src="{% static 'main/img/form-faskorez.png' %}" alt="Фаскорез" />
+                            <div class="radio_wrap">
+                              <input
+                                id="faskorez"
+                                type="radio"
+                                name="second_step_radio"
+                                value="Фаскорез"
+                              />
+                              <label for="faskorez">Фаскорез</label>
+                            </div>
+                          </div>
+                          <div class="radio_one">
+                            <img src="{% static 'main/img/form-tryborez.png' %}" alt="Труборез" />
+                            <div class="radio_wrap">
+                              <input
+                                id="tryborez"
+                                type="radio"
+                                name="second_step_radio"
+                                value="Труборез"
+                              />
+                              <label for="tryborez">Труборез</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <input
+                        type="button"
+                        name="previous"
+                        class="previous action-button-previous"
+                        value="Назад"
+                      />
+                      <input
+                        type="button"
+                        name="next"
+                        class="next action-button"
+                        value="Далее"
+                      />
+                    </fieldset>
+                    <fieldset>
+                      <div class="form-card">
+                        <h2 class="fs-title">
+                          Введите диаметры труб которые хотите обрабатывать и
+                          укажите толщины стенок.
+                        </h2>
+                        <div class="radio-group">
+                          <div class="radio" data-value="credit">
+                            <img
+                              src="https://i.imgur.com/XzOzVHZ.jpg"
+                              width="200px"
+                              height="100px"
+                            />
+                          </div>
+                          <div class="radio" data-value="paypal">
+                            <img
+                              src="https://i.imgur.com/jXjwZlj.jpg"
+                              width="200px"
+                              height="100px"
+                            />
+                          </div>
+                          <br />
+                        </div>
+                        <label class="pay">Card Holder Name*</label>
+                        <input type="text" name="holdername" placeholder="" />
+                        <div class="row">
+                          <div class="col-9">
+                            <label class="pay">Card Number*</label>
+                            <input type="text" name="cardno" placeholder="" />
+                          </div>
+                          <div class="col-3">
+                            <label class="pay">CVC*</label>
+                            <input
+                              type="password"
+                              name="cvcpwd"
+                              placeholder="***"
+                            />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-3">
+                            <label class="pay">Expiry Date*</label>
+                          </div>
+                          <div class="col-9">
+                            <select class="list-dt" id="month" name="expmonth">
+                              <option selected>Month</option>
+                              <option>January</option>
+                              <option>February</option>
+                              <option>March</option>
+                              <option>April</option>
+                              <option>May</option>
+                              <option>June</option>
+                              <option>July</option>
+                              <option>August</option>
+                              <option>September</option>
+                              <option>October</option>
+                              <option>November</option>
+                              <option>December</option>
+                            </select>
+                            <select class="list-dt" id="year" name="expyear">
+                              <option selected>Year</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <input
+                        type="button"
+                        name="previous"
+                        class="previous action-button-previous"
+                        value="Назад"
+                      />
+                      <input
+                        type="button"
+                        name="make_payment"
+                        class="next action-button"
+                        value="Confirm"
+                      />
+                    </fieldset>
+                    <fieldset>
+                      <div class="form-card">
+                        <h2 class="fs-title text-center">Success !</h2>
+                        <br /><br />
+                        <div class="row justify-content-center">
+                          <div class="col-3">
+                            <img
+                              src="https://img.icons8.com/color/96/000000/ok--v2.png"
+                              class="fit-image"
+                            />
+                          </div>
+                        </div>
+                        <br /><br />
+                        <div class="row justify-content-center">
+                          <div class="col-7 text-center">
+                            <h5>You Have Successfully Signed Up</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Script JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js"></script> -->
+<!-- <script src="js/jquery.steps.min.js"></script> -->
+
