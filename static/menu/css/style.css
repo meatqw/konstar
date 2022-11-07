@@ -148,7 +148,7 @@ a.call_btn:hover{
     margin-right:10px
 }
 .hero_section{
-    background-image:url(/Users/neetqw/python/konstar/main/Users/neetqw/python/konstar/main/static/main/img/hero.jpg});
+    background-image:url(/static/main/img/hero.jpg});
     background-position:center;
     background-repeat:no-repeat;
     background-size:cover;
@@ -221,7 +221,7 @@ a.hero_btn .fa{
     overflow:hidden
 }
 .blu_rectangle{
-    background:url(/Users/neetqw/python/konstar/main/static/main/img/catalog-rectangle.png);
+    background:url(/static/main/img/catalog-rectangle.png);
     width:80px;
     height:220px;
     position:absolute;
@@ -269,7 +269,7 @@ blu_rectangle img{
     margin-bottom:0
 }
 .in_numbers{
-    background-image:url(/Users/neetqw/python/konstar/main/static/main/img/in-number-bg.jpg);
+    background-image:url(/static/main/img/in-number-bg.jpg);
     background-size:cover
 }
 .in_numbers__wrap{
@@ -849,7 +849,7 @@ select.list-dt:focus{
     color:#2f95d9
 }
 .about_hero_section{
-    background-image:url(/Users/neetqw/python/konstar/main/static/main/img/about_hero.png);
+    background-image:url(/static/main/img/about_hero.png);
     background-position:center;
     background-repeat:no-repeat;
     background-size:cover;
