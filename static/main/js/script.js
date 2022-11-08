@@ -15,3 +15,50 @@ const swiper = new Swiper('.swiper', {
         draggable: true,
     },
 });
+
+const swiperMain = new Swiper('.swiper-main', {
+    slidesPerView: 'auto',
+    loop: true,
+    slidesPerView: 1,
+    autoplay: {
+        delay: 4000,
+        stopOnLastSlide: true,
+        disableOnInteraction: true,
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    speed: 500,
+
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        // draggable: true,
+    },
+});
+
+const swiperPartners = new Swiper('.swiper-partners', {
+    loop: false,
+    slidesPerView: 5,
+    spaceBetween: 20,
+
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+        },
+
+        520: {
+            slidesPerView: 3,
+        },
+
+        992: {
+            slidesPerView: 5,
+        },
+    }
+});

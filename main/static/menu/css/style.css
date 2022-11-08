@@ -21,7 +21,7 @@ body{
     flex-direction:row;
     justify-content:space-between;
     align-items:center;
-    min-height:0px
+    min-height:64px
 }
 .top_line__wrap a{
     text-decoration:none
@@ -2150,10 +2150,10 @@ select.list-dt:focus{
 .slick-list {
     height: 500px;
 }
-.social_btn{
+/* .social_btn{
 	padding-left: 87%;
 	padding-bottom: 20px;
-}
+} */
 .slick-list {
     max-height: 500px;
 }

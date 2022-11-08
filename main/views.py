@@ -44,7 +44,7 @@ def catalog(request):
 
 def cart(request):
     """CART page"""
-    return render(request, 'main/cart.html')
+    return render(request, 'main/detail_cart.html')
 
 def service(request):
     """CERVICE page"""
